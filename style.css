@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(195, 241, 226);
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-cont {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+form .line1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+form .line1 .fname {
+    width: 47%;
+}
+
+form .line1 .lname {
+    width: 47%;
+}
+
+form .line1 .fname input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(190, 225, 190);
+}
+
+form .line1 .lname input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(190, 225, 190);
+    border-radius: 10px;
+}
+
+form .line2 input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(190, 225, 190);
+    border-radius: 10px;
+}
+
+form .line3 .radio {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+form .line3 .radio .first {
+    width: 47%;
+    border: 1px solid rgb(190, 225, 190);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form .line3 .radio .second {
+    width: 47%;
+    border: 1px solid rgb(190, 225, 190);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form .line4 .msg {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid rgb(190, 225, 190);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.submit {
+    border-radius: 10px;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+span {
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+
+}
+
+.query {
+    cursor: pointer;
+}
+
+.success {
+    background: hsl(187, 24%, 22%);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    line-height: 30px;
+    position: fixed;
+    margin-top: 10px;
+    top: -200px;
+    transition: 2s;
+}
+
+.success p {
+    color: rgba(206, 224, 225, 0.858);
+}
+
+.success b {
+    font-size: 17.5px;
+}
+
+@media screen and (max-width:800px) {
+    .form-cont {
+        width: 70%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .form-cont {
+        width: 90%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+}

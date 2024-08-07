@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="success" id="success">
+        <b>&#9745; Message Sent!</b><br>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <div class="form-cont">
+        <form action="" id="form">
+            <h1>Contact Us</h1>
+            <div class="line1">
+                <div class="fname">
+                    <label for="">First Name *</label><br>
+                    <input type="text" name="" id="fname"><br>
+                    <span id="firstAlert">&nbsp;</span>
+                </div>
+                <div class="lname">
+                    <label for="">Last Name *</label><br>
+                    <input type="text" name="" id="lname"><br>
+                    <span id="lastAlert">&nbsp;</span>
+                </div>
+            </div>
+            <br>
+            <div class="line2">
+                <label for="">Email Address</label><br>
+                <input type="text" name="" id="email"><br>
+                <span id="emailAlert">&nbsp;</span>
+            </div>
+            <br>
+            <div class="line3">
+                <label for="">Query Type</label><br>
+                <div class="radio" id="radio">
+                    <div class="first" id="GEParent">
+                        <input type="radio" name="query" id="GE" value="GE" class="query">
+                        <label for="">General Enquiry</label>
+                    </div>
+                    <div class="second" id="SRParent">
+                        <input type="radio" name="query" id="SR" value="SR" class="query">
+                        <label for="">Support Request</label>
+                    </div>
+                </div><br>
+                <span id="queryAlert">&nbsp;</span>
+            </div>
+            <br>
+            <div class="line4">
+                <label for="">Message *</label><br>
+                <textarea class="msg" name="" id="msg" rows="10"></textarea>
+                <br>
+                <span id="messageAlert">&nbsp;</span>
+            </div>
+            <br>
+            <div class="line5">
+                <input type="checkbox" name="" id="check"> <label for="">i consent to being contacted by the term
+                    *</label><br>
+                <span id="checkAlert">&nbsp;</span>
+            </div>
+            <br>
+            <input type="submit" class="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>
+<script src="app.js"></script>
